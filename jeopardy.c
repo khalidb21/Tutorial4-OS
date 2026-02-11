@@ -1,10 +1,10 @@
 /*
  * Tutorial 4 Jeopardy Project 
- * Group 5
+ * Group 7
  * Alexy Pichette (100822470)
- * Rida Siddiqi (100825212)
- * Muhammad Mujtaba Madad (100790195)
- * Ishmeet Kaur (100809450)
+ *
+ *
+ *
  */
 #include <stdio.h>
 #include <unistd.h>
