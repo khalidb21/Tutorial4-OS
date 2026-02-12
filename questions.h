@@ -1,3 +1,11 @@
+/*
+ * Tutorial 4 Jeopardy Project 
+ * Group 7
+ * Alexy Pichette (100822470)
+ *
+ *
+ *
+ */
 #ifndef QUESTIONS_H_
 #define QUESTIONS_H_
 
