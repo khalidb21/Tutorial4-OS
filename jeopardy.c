@@ -2,9 +2,9 @@
  * Tutorial 4 Jeopardy Project 
  * Group 7
  * Alexy Pichette (100822470)
- *
- *
- *
+ * Khalid Badri (100917156)
+ * Ihsan Ismail (100915143)
+ * Nathan Tenn (100795860)
  */
 #include <stdio.h>
 #include <unistd.h>
@@ -76,11 +76,11 @@ void init_question_states() {
 // <<< YOU NEED A WAY TO MAP category+price -> indices >>>
 int category_to_index(const char *category) {
     // Example mapping — ADAPT this to your categories
-    if (strcmp(category, "History") == 0) return 0;
-    if (strcmp(category, "Science") == 0) return 1;
-    if (strcmp(category, "Sports") == 0) return 2;
-    if (strcmp(category, "Music") == 0) return 3;
-    if (strcmp(category, "Movies") == 0) return 4;
+    if (strcasecmp(category, "History") == 0) return 0;
+    if (strcasecmp(category, "Science") == 0) return 1;
+    if (strcasecmp(category, "Sports") == 0) return 2;
+    if (strcasecmp(category, "Music") == 0) return 3;
+    if (strcasecmp(category, "Movies") == 0) return 4;
     return -1;
 }
 
@@ -217,7 +217,7 @@ int main(int argc, char *argv[]){
         }
 
         // Check answer
-        if(strcmp(tokens[0], "Who") == 0 || strcmp(tokens[0], "What") == 0){
+        if(strcasecmp(tokens[0], "Who") == 0 || strcasecmp(tokens[0], "What") == 0){
             if(valid_answer(selected_category, selected_price, path) == true){
                 printf("\n\nYou are Correct!\nGood Job, You have been awarded $%d", selected_price);
                 update_score(players, NUM_PLAYERS, selected_player, selected_price);

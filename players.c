@@ -2,9 +2,9 @@
  * Tutorial 4 Jeopardy Project 
  * Group 7
  * Alexy Pichette (100822470)
- *
- *
- *
+ * Khalid Badri (100917156)
+ * Ihsan Ismail (100915143)
+ * Nathan Tenn (100795860)
  */
 #include <stdio.h>
 #include <string.h>
@@ -12,7 +12,7 @@
 
 bool player_exists(player *players, int num_players, const char *name) {
     for (int i = 0; i < num_players; i++) {
-        if (strcmp(players[i].name, name) == 0) {
+        if (strcasecmp(players[i].name, name) == 0) {
             return true;
         }
     }
@@ -21,7 +21,7 @@ bool player_exists(player *players, int num_players, const char *name) {
 
 void update_score(player *players, int num_players, const char *name, int points) {
     for (int i = 0; i < num_players; i++) {
-        if (strcmp(players[i].name, name) == 0) {
+        if (strcasecmp(players[i].name, name) == 0) {
             players[i].score += points;
             return;
         }

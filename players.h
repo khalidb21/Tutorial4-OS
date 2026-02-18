@@ -2,9 +2,9 @@
  * Tutorial 4 Jeopardy Project 
  * Group 7
  * Alexy Pichette (100822470)
- *
- *
- *
+ * Khalid Badri (100917156)
+ * Ihsan Ismail (100915143)
+ * Nathan Tenn (100795860)
  */
 #ifndef PLAYERS_H_
 #define PLAYERS_H_
